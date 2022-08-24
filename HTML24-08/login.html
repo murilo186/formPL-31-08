@@ -1,0 +1,36 @@
+<doctype html>
+
+<html>
+        <meta charsert='utf-8'>
+        <script lang="Javascript">
+             function validar()
+             {
+                 var log, sen;
+                 log = meuform.login.value;
+                 sen = meuform.Senha.value;
+                  if (log == "pamonha" && sen== "milho")
+                  {
+                document.getElementById("destino").innerHTML = "<b>Acesso concedido</b>";
+                  }
+                  else
+                  {
+                    document.write("destino").innerHTML = "<i>Acesso negado</i>";
+                  }
+             }
+        </script>
+
+
+        <head>
+        <title>Form</title>
+        <body>
+            <form name="meuform" action="ValidarAcesso.html" method="post">
+                LOGIN:<input type="text" name="login" value="Digite aqui seu login"><br>
+                SENHA:<input type="text" name="Senha" value="Digite aqui  sua Senha"><br>
+                <input type="button" name="enviar" value="enviar" onclick="validar();">             
+            </form>
+
+         <P id="destino"></P>
+        </head>
+
+        </body>   
+</html> 

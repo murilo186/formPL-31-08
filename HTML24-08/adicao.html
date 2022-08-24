@@ -1,0 +1,41 @@
+<doctype html>
+
+    <html>
+            <meta charsert='utf-8'>
+            <script lang="Javascript">
+                 function somar()
+                 {
+                     var n1, n2, resultado;
+                     n1 = parseFloat (meuform.numero1.value);
+                     n2 = parseFloat (meuform.numero2.value);
+                    resultado = n1 + n2;
+                      
+                    document.getElementById("resultado").innerHTML = resultado;
+                      
+          
+                 }
+            </script>
+    
+    
+            <head>
+            <title>Form</title>
+            <body>
+                <form name="meuform">
+                    numero1:<input type="text" name="numero1" value="0"><br>
+                    numero2:<input type="text" name="numero2" value="0"><br>
+                    <input type="button" name="butSomar" value="Somar" onclick="somar();">             
+                </form>
+
+                <table border="1";>
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                </tr>
+    
+            Resultado da soma: <p id="resultado"></p>
+            </head>
+    
+            </body>   
+    </html> 
